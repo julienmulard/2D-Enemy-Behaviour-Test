@@ -31,9 +31,9 @@ public class EnemyLifeController : MonoBehaviour {
 	}
 
 	void ApplyDamage(int damage){
-		numHP--;
+		numHP-=damage;
 		if (numHP <= 0){
-				anim.SetTrigger("Death");
+				anim.SetBool("Death", true);
 		}
 		anim.SetTrigger("isHit");
 	}

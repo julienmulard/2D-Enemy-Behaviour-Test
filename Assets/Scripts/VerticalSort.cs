@@ -14,7 +14,12 @@ public class VerticalSort : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (sprite_renderer){
-			sprite_renderer.sortingOrder = (int)(this.transform.position.y * -100);
+			
+			float height = sprite_renderer.sprite.bounds.size.y;
+
+			sprite_renderer.sortingOrder = (int)((this.transform.position.y + height*0.5) * -100)-1;
+
+
 		}
 	}
 }
