@@ -8,6 +8,7 @@ public class SlimeAudioManager : MonoBehaviour {
 
 	public AudioClip appear;
 	public AudioClip isHit;
+	public AudioClip isDead;
 
 
 	// Use this for initialization
@@ -26,5 +27,9 @@ public class SlimeAudioManager : MonoBehaviour {
 
 	void playIsHit(){
 		source.PlayOneShot(isHit);
+	}
+
+	void playIsDead(){
+		source.PlayOneShot(isDead);
 	}
 }

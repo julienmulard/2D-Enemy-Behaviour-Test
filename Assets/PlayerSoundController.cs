@@ -23,4 +23,8 @@ public class PlayerSoundController : MonoBehaviour {
 	void playSwordSlash(){
 		source.PlayOneShot(swordSlash);
 	}
+
+	void playIsHit(){
+		source.PlayOneShot(isHit);
+	}
 }

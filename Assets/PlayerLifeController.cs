@@ -25,7 +25,7 @@ public class PlayerLifeController : MonoBehaviour {
 			this.transform.gameObject.SendMessage("stopMoving");
 		}
 		anim.SetTrigger("isHit");
-		this.transform.gameObject.SendMessage("stopMoving");
+		//this.transform.gameObject.SendMessage("stopMoving");
 
 
 	}
