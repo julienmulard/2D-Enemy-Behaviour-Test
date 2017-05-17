@@ -5,21 +5,21 @@ using UnityEngine;
 public class LayerManager : MonoBehaviour {
 
 	private SpriteRenderer parentRenderer;
-	private SpriteRenderer renderer;
+	private SpriteRenderer rend;
 
 	private bool isAppearing;
 
 	// Use this for initialization
 	void Start () {
 		parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
-		renderer = GetComponent<SpriteRenderer>();
+		rend = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 //		renderer.sortingOrder = parentRenderer.sortingOrder;
-		renderer.sortingOrder = parentRenderer.sortingOrder+1;
+		rend.sortingOrder = parentRenderer.sortingOrder+1;
 
 	}
 }
